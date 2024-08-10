@@ -1,20 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+body {
+    background-color: #8ECAE6;
+    background-image: url("images/florida-pano.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 * {
     font-family: "Roboto", sans-serif;
 }
-.navigation {
+
+header {
     display: flex;
-    justify-content: flex-end;
-}
-.nav {
-    display: flex;
-    gap: 20px;
-    margin-right: 120px;
-    font-size: 20px;
-    text-underline: none;
+    height: 170px;
+
 }
 
-li {
-    list-style-type: none;
+a {
+    text-decoration: none;
+}
+
+header .header-title {
+    position: relative;
+    left: 10px;
+    bottom: 70px;
+}
+
+nav .nav-buttons {
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+    list-style: none;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 50px;
+    font-size: 30px;
+
+}
+a {
+    color: black;
+}
+
+
+section {
+    display: flex;
+    border: 2px solid black
+}
+
+section .section-p {
+    border: 2px solid red;
+    width: 50%;
+    font-size: 20px;
+    margin-right: auto;
+}
+
+section a {
+    border: 2px solid pink;
+    color: black;
+    width: 200px;
+    text-align: center;
+
+
+}
+
+section .section-table {
+    background-color: orange;
+}
+
+aside {
+    background-color: yellow;
+}
+
+aside .aside-p {
+    background-color: crimson;
+}
+
+aside .aside-list {
+    background-color: mediumblue;
 }

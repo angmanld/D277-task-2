@@ -11,7 +11,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-header {
+.header {
     display: flex;
     height: 170px;
 
@@ -38,24 +38,48 @@ nav .nav-buttons {
     font-size: 30px;
 
 }
+
+#city-1 {
+    background-image: url("images/tallahassee.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 25px;
+}
+
+#city-2 {
+    background-image: url("images/orlando.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 25px;
+}
+
+#city-3 {
+    background-image: url("images/tampa.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 25px;
+
+}
 a {
     color: black;
 }
 
 
-section {
+.section {
     display: flex;
-    border: 2px solid black
 }
 
-section .section-p {
-    border: 2px solid red;
+.section-p {
     width: 50%;
     font-size: 20px;
-    margin-right: auto;
+    margin: 0px auto 0px 0px;
+    background-color: #0d7dce;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+
 }
 
-section a {
+.section a {
     border: 2px solid pink;
     color: black;
     width: 200px;

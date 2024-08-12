@@ -1,105 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-    background-color: #8ECAE6;
-    background-image: url("images/florida-pano.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-color: #FFF;
 }
 
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 .header {
     display: flex;
     height: 170px;
-
+    align-items: center;
+    gap: 15px;
 }
 
-a {
-    text-decoration: none;
+.header-title {
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 4px black;
 }
 
-header .header-title {
-    position: relative;
-    left: 10px;
-    bottom: 70px;
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
 }
 
-nav .nav-buttons {
+.nav-buttons {
     display: flex;
     gap: 40px;
     text-decoration: none;
     list-style: none;
-    justify-content: flex-end;
-    position: relative;
-    bottom: 50px;
-    font-size: 30px;
-
+    font-size: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+}
+.nav-buttons *:hover {
+    color: #dedede;
+    text-shadow: 0px 0px 2px #dedede;
+    transition: all 0.3s;
 }
 
 #city-1 {
+    width: 20%;
     background-image: url("images/tallahassee.jpg");
     background-size: cover;
     color: white;
     font-size: 25px;
+    border-radius: 15px;
 }
 
 #city-2 {
+    width: 20%;
     background-image: url("images/orlando.jpg");
     background-size: cover;
     color: white;
     font-size: 25px;
+    border-radius: 15px;
 }
-
 #city-3 {
+    width: 20%;
     background-image: url("images/tampa.jpg");
     background-size: cover;
     color: white;
     font-size: 25px;
+    border-radius: 15px;
 
 }
-a {
-    color: black;
-}
+
 
 
 .section {
+    height: 40vh;
     display: flex;
-}
-
-.section-p {
-    width: 50%;
-    font-size: 20px;
-    margin: 0px auto 0px 0px;
-    background-color: #0d7dce;
-    color: white;
-    text-shadow: 1px 2px 3px black;
+    flex-grow: 1;
+    justify-content: center;
 
 }
-
 .section a {
-    border: 2px solid pink;
-    color: black;
-    width: 200px;
     text-align: center;
+}
 
+#city-1:hover, #city-2:hover, #city-3:hover {
+    font-size: 32px;
+    transition: all 0.2s;
+}
+
+.aside {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 
 }
 
-section .section-table {
-    background-color: orange;
-}
-
-aside {
-    background-color: yellow;
-}
-
-aside .aside-p {
-    background-color: crimson;
-}
-
-aside .aside-list {
-    background-color: mediumblue;
+.aside-p {
+    width: 70%;
+    font-size: 20px;
+    margin: 0;
+    color: black;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px black;
 }
